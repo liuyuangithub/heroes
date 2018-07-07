@@ -7,204 +7,20 @@
             <thead>
               <tr>
                 <th>#</th>
-                <th>Header</th>
-                <th>Header</th>
-                <th>Header</th>
-                <th>Header</th>
+                <th>名称</th>
+                <th>性别</th>
                 <th>操作</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1,001</td>
-                <td>Lorem</td>
-                <td>ipsum</td>
-                <td>dolor</td>
-                <td>sit</td>
+              <tr :key="item.id" v-for="(item, index) in list">
+                <td>{{ index + 1 }}</td>
+                <td>{{ item.name }}</td>
+                <td>{{ item.gender }}</td>
                 <td>
-                  <a href="edit.html">edit</a>
+                  <a href="edit.html">编辑</a>
                   &nbsp;&nbsp;
-                  <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1,002</td>
-                <td>amet</td>
-                <td>consectetur</td>
-                <td>adipiscing</td>
-                <td>elit</td>
-                <td>
-                  <a href="edit.html">edit</a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1,003</td>
-                <td>Integer</td>
-                <td>nec</td>
-                <td>odio</td>
-                <td>Praesent</td>
-                <td>
-                  <a href="edit.html">edit</a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1,003</td>
-                <td>libero</td>
-                <td>Sed</td>
-                <td>cursus</td>
-                <td>ante</td>
-                <td>
-                  <a href="edit.html">edit</a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1,004</td>
-                <td>dapibus</td>
-                <td>diam</td>
-                <td>Sed</td>
-                <td>nisi</td>
-                <td>
-                  <a href="edit.html">edit</a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1,005</td>
-                <td>Nulla</td>
-                <td>quis</td>
-                <td>sem</td>
-                <td>at</td>
-                <td>
-                  <a href="edit.html">edit</a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1,006</td>
-                <td>nibh</td>
-                <td>elementum</td>
-                <td>imperdiet</td>
-                <td>Duis</td>
-                <td>
-                  <a href="edit.html">edit</a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1,007</td>
-                <td>sagittis</td>
-                <td>ipsum</td>
-                <td>Praesent</td>
-                <td>mauris</td>
-                <td>
-                  <a href="edit.html">edit</a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1,008</td>
-                <td>Fusce</td>
-                <td>nec</td>
-                <td>tellus</td>
-                <td>sed</td>
-                <td>
-                  <a href="edit.html">edit</a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1,009</td>
-                <td>augue</td>
-                <td>semper</td>
-                <td>porta</td>
-                <td>Mauris</td>
-                <td>
-                  <a href="edit.html">edit</a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1,010</td>
-                <td>massa</td>
-                <td>Vestibulum</td>
-                <td>lacinia</td>
-                <td>arcu</td>
-                <td>
-                  <a href="edit.html">edit</a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1,011</td>
-                <td>eget</td>
-                <td>nulla</td>
-                <td>Class</td>
-                <td>aptent</td>
-                <td>
-                  <a href="edit.html">edit</a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1,012</td>
-                <td>taciti</td>
-                <td>sociosqu</td>
-                <td>ad</td>
-                <td>litora</td>
-                <td>
-                  <a href="edit.html">edit</a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1,013</td>
-                <td>torquent</td>
-                <td>per</td>
-                <td>conubia</td>
-                <td>nostra</td>
-                <td>
-                  <a href="edit.html">edit</a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1,014</td>
-                <td>per</td>
-                <td>inceptos</td>
-                <td>himenaeos</td>
-                <td>Curabitur</td>
-                <td>
-                  <a href="edit.html">edit</a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1,015</td>
-                <td>sodales</td>
-                <td>ligula</td>
-                <td>in</td>
-                <td>libero</td>
-                <td>
-                  <a href="edit.html">edit</a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:window.confirm('Are you sure?')">delete</a>
+                  <a @click="handleDelList(item.id)" href="javascript:;">删除</a>
                 </td>
               </tr>
             </tbody>
@@ -214,14 +30,48 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {}
+export default {
+  data() {
+    return {
+      list: {
+        name: "",
+        gender: ""
+      }
+    };
+  },
+  // 在created是请求数据
+  created() {
+    // 要调用方法
+    this.handlerGetList();
+  },
+  methods: {
+    handlerGetList() {
+      this.$http
+        .get("heroes")
+        .then(res => {
+          console.log(res);
+          const { status, data } = res;
+          if (status === 200) {
+            this.list = data;
+          }
+        })
+        .catch(err => err);
+    },
+    handleDelList(id) {
+      if (!confirm("是否确认删除")) {
+        return;
+      }
+      this.$http.delete(`heroes/${id}`).then(res => {
+        const { status } = res;
+        if (status === 200) {
+          this.handlerGetList();
+        }
+      });
     }
   }
+};
 </script>
 
 <style>
-
 </style>
 
