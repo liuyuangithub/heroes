@@ -1,7 +1,8 @@
 <template>
   <div>
         <h2 class="sub-header">英雄列表</h2>
-        <a class="btn btn-success" href="add.html">Add</a>
+        <!-- <a class="btn btn-success" href="add.html">Add</a> -->
+        <router-link  class="btn btn-success" :to="{ name: 'addhero' }">添加英雄</router-link>
         <div class="table-responsive">
           <table class="table table-striped">
             <thead>
@@ -18,7 +19,9 @@
                 <td>{{ item.name }}</td>
                 <td>{{ item.gender }}</td>
                 <td>
-                  <a href="edit.html">编辑</a>
+                  <!-- <a href="edit.html">编辑</a> -->
+                  <!-- 这里编辑要传 id -->
+                  <router-link :to="{ name: 'edithero', params: {id: item.id} }">编辑</router-link>
                   &nbsp;&nbsp;
                   <a @click="handleDelList(item.id)" href="javascript:;">删除</a>
                 </td>
